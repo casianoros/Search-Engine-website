@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700");
+body, html {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center; }
+
+nav {
+  display: flex;
+  flex-flow: column;
+  background-color: #1d1e1e;
+  width: 100%;
+  height: 25%; }
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-image: url("AirplaneImg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  flex-flow: row; }
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  background-color: #1d1e1e; }
+
+.navTop {
+  display: flex;
+  height: 75%;
+  width: 100%; }
+
+.navBottom {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  background-color: #1d1e1e;
+  flex-flow: row; }
+
+.navBottom > ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 0; }
+
+.navBottom > ul > li {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 15%; }
+
+h4 {
+  display: flex;
+  font-family: "Raleway";
+  font-weight: 200;
+  color: #e9e9e9;
+  margin: 0; }
+
+h5 {
+  display: flex;
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 18px;
+  color: #e9e9e9;
+  margin: 0; }
+
+h6 {
+  display: flex;
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 14px;
+  color: #e9e9e9;
+  margin: 0; }
+
+.navBottom > ul :hover {
+  background-color: #368496;
+  cursor: pointer; }
+
+.navBottom > ul :focus {
+  background-color: #368496; }
+
+.inverseJustCont {
+  justify-content: flex-end !important; }
+
+.contLeftBox {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-flow: column; }
+
+.divFirstLB {
+  display: flex;
+  height: 10%;
+  width: 100%; }
+
+.divSecondLB {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column; }
+
+.secondLb_Elem {
+  display: flex;
+  width: 85%;
+  height: 30%;
+  flex-flow: row; }
+
+.firstInsideElm {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+
+.ifielmLeft {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: flex-start;
+  align-items: center; }
+
+.ifielmCenter {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center; }
+
+.marginL {
+  margin-left: 20%; }
+
+.secondInsideElm {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column; }
+
+.secondLb_Elem:hover {
+  background-color: #368496;
+  box-shadow: 2px 0px 2px black;
+  cursor: pointer; }
+
+.secondLb_Elem_space {
+  display: flex;
+  width: 70%;
+  height: 1%; }
+
+.divThirdLB {
+  display: flex;
+  height: 10%;
+  width: 100%; }
+
+.activeElm {
+  background-color: #368496; }
+
+.contRightBox {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end; }
+
+.divFirstRB {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  background-color: #1d1e1e;
+  flex-flow: column; }
+
+.rbDivFirst {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.rbDivSecond {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center; }
+
+.rbDivThird {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+
+.rbDivFourth {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center; }
+
+.addWidth {
+  width: 35% !important; }
+
+.addWidth2 {
+  width: 70% !important; }
+
+.addHeight {
+  height: 100% !important; }
+
+.line {
+  display: flex;
+  width: 85%;
+  height: 1px;
+  background-color: #e9e9e9;
+  opacity: 0.2; }
+
+.rbSDivElm {
+  display: flex;
+  width: 33%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column; }
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row; }
+
+.btn {
+  background-color: #a1333e;
+  margin-right: 1%;
+  cursor: pointer;
+  border: none;
+  color: #e9e9e9;
+  width: 140px;
+  height: 25px; }
+
+.buyTable {
+  display: flex;
+  position: absolute;
+  width: 900px;
+  height: 550px;
+  background-color: #1d1e1e;
+  box-shadow: 2px 0px 2px black;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center; }
+
+.centerJustCont {
+  justify-content: center !important;
+  flex-flow: column !important;
+  align-items: center !important; }
+
+/*# sourceMappingURL=style.css.map */

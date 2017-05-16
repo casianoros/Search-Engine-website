@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Search Engine</title>
+      <link rel="stylesheet" href="style.css" type="text/css" >
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+      
+        <nav>
+            <div class="navTop"></div>
+            <div class="navBottom">
+                <ul>
+                    <li><h5>home</h5></li>
+                    <li><h5>activity</h5></li>
+                    <li><h5>offers</h5></li>
+                    <li><h5>messenger</h5></li>
+                </ul>
+                <ul class="inverseJustCont">
+                    <li><h5>log out</h5></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="contLeftBox">
+                <div class="divFirstLB"></div>
+
+                <!-- LIST OF Flight's -->
+
+                <div class="divSecondLB" id="original">
+                    <div class="secondLb_Elem">
+                        <div class="firstInsideElm">
+                            <div class="ifielmLeft"><h5 class="marginL">Milano -> CPH</h5></div>
+                            <div class="ifielmCenter"><h6>Wizz Air ( business class )</h6></div>
+                        </div>
+                        <div class="secondInsideElm">
+                            <h6>Average</h6>
+                            <h5>150-200 e</h5>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="secondLb_Elem">
+                        <div class="firstInsideElm">
+                            <div class="ifielmLeft"><h5 class="marginL">Copenhaga -> London</h5></div>
+                            <div class="ifielmCenter"><h6>Ryanair ( low class )</h6></div>
+                        </div>
+                        <div class="secondInsideElm">
+                            <h6>Average</h6>
+                            <h5>50-750 e</h5>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="secondLb_Elem">
+                        <div class="firstInsideElm">
+                            <div class="ifielmLeft"><h5 class="marginL">Copenhaga -> Los Angeles</h5></div>
+                            <div class="ifielmCenter"><h6>SAS ( business class )</h6></div>
+                        </div>
+                        <div class="secondInsideElm">
+                            <h6>Average</h6>
+                            <h5>1500-2500 e</h5>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <!-- LIST OF Flight's On search-->
+
+                <div class="divSecondLB" id="onSearch" style="display:none">
+                    
+                    <div class="secondLb_Elem">
+                        <div class="firstInsideElm">
+                            <div class="ifielmLeft"><h5 class="marginL">Copenhaga -> London</h5></div>
+                            <div class="ifielmCenter"><h6>Ryanair ( low class )</h6></div>
+                        </div>
+                        <div class="secondInsideElm">
+                            <h6>Average</h6>
+                            <h5>50-750 e</h5>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="secondLb_Elem">
+                        <div class="firstInsideElm">
+                            <div class="ifielmLeft"><h5 class="marginL">Copenhaga -> Los Angeles</h5></div>
+                            <div class="ifielmCenter"><h6>SAS ( business class )</h6></div>
+                        </div>
+                        <div class="secondInsideElm">
+                            <h6>Average</h6>
+                            <h5>1500-2500 e</h5>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <!-- LIST OF Flight's On search-->
+  
+                <div class="divThirdLB"></div>
+            </div>
+            <div class="contRightBox">
+                <div class="divFirstRB">
+                    <div class="rbDivFirst">
+                        <div class="navBottom addHeight">
+                            <ul class="addWidth2">
+                                <li class="addWidth" id="wizz"><h6>Wizz Air</h6></li>
+                                <li class="addWidth" id="ry"><h6>Ryanair</h6></li>
+                                <li class="addWidth" id="sas"><h6>Sas</h6></li>
+                                <li class="addWidth" id="qat"><h6>Qatar Airlines</h6></li>
+                            </ul>
+                        </div>
+                        <div class="line addWidth2"></div>
+                    </div>
+                    <div class="rbDivSecond">
+                        <div class="rbSDivElm">
+                            <h6>From:</h6>
+                            <br>
+                            <input type="date" id="fromData">
+                        </div>
+                        <div class="rbSDivElm">
+                            <h6>Until:</h6>
+                            <br>
+                            <input type="date" id="untilData"></div>
+                        <div class="rbSDivElm">
+                            <div class="group">
+                                <input type="checkbox" id="fTravel" name="fastTravel" value="Fast" checked>
+                                <h6>Fast</h6>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="bTravel" name="businessTravel" value="Business">
+                                <h6>Business</h6>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="lTravel" name="lowcostTravel" value="LowCost">
+                                <h6>Low cost</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rbDivThird">
+                        <h4>Attention the search will select strict the details entered</h4>
+                    </div>
+                    <div class="rbDivFourth">
+                        <input class="btn" id="submitSearch" type="submit" value="seach flight">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buyTable" style="display:none">
+            <div class="rbDivSecond centerJustCont">
+                <h4>Wizz Air</h4>
+                <h6>250e</h6>
+                <br>
+                <h6>24-07-2023 with return on 28-08-2023 </h6>
+                <h6>Departure: 21:30  Arrival: 23:00</h6>
+            </div>
+            <div class="line"></div>
+            <div class="rbDivThird centerJustCont">
+                <h4>Casian Florentin Oros</h4>
+                <h5>Nordea Bank</h5>
+                <h6>Account nr: 29282833181</h6>
+                <h6>Registration nr: 2234</h6>
+            </div>
+            <div class="line"></div>
+            <div class="rbDivFirst centerJustCont">
+                <h6>If you are sure that you would like to buy the this ticket then continue on your transaction</h6>
+                <h6>Thank you for chosing us !</h6>
+            </div>
+            <div class="rbDivFourth centerJustCont">
+                <input class="btn" id="buyFlight" type="submit" value="Buy">
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+    <script>
+        var flightName;
+        var flightFrom;
+        var flightTo;
+        var fastCheck;
+        var businessCheck;
+        var lowcostCheck;
+
+        $(document).on("click","#submitSearch",function(){
+            // console.log("search Flight");
+            if(flightName == null){
+                console.log("error no company selected");
+            }else{
+                // console.log(flightName);
+                flightFrom = $("#fromData").val();
+                flightTo = $("#untilData").val();
+                fastCheck = $("#fTravel").prop('checked');
+                businessCheck = $("#bTravel").prop('checked');
+                lowcostCheck = $("#lTravel").prop('checked');
+                // console.log(fastCheck,businessCheck,lowcostCheck);
+                runSearch();
+            }
+        });
+
+        function runSearch(){
+            $("#original").hide();
+            $("#onSearch").show();
+            $("#onSearch").html(" ");
+            if(fastCheck == true || lowcostCheck == true){
+                $("#onSearch").append('<div class="secondLb_Elem"><div class="firstInsideElm"><div class="ifielmLeft"><h5 class="marginL">Milano -> CPH</h5></div><div class="ifielmCenter"><h6>'+ flightName +' ( '+ fastCheck +' )</h6><h6>'+flightFrom+'</h6><h6>Return:'+flightTo+'</h6></div></div><div class="secondInsideElm"><h6>Price</h6><h5> 200 e</h5></div></div><div class="line"></div>');
+            };
+            if(lowcostCheck == true){
+                $("#onSearch").append('<div class="secondLb_Elem"><div class="firstInsideElm"><div class="ifielmLeft"><h5 class="marginL">Copenhaga -> London</h5></div><div class="ifielmCenter"><h6>'+ flightName +' ( '+ lowcostCheck +' )</h6><h6>'+flightFrom+'</h6><h6>Return:'+flightTo+'</h6></div></div><div class="secondInsideElm"><h6>Price</h6><h5> 70 e</h5></div></div><div class="line"></div>');
+            };
+            if(businessCheck == true){
+                console.log("yes");
+                $("#onSearch").append('<div class="secondLb_Elem"><div class="firstInsideElm"><div class="ifielmLeft"><h5 class="marginL">Copenhaga -> Los Angeles</h5></div><div class="ifielmCenter"><h6>'+ flightName +' ( '+ businessCheck +' )</h6><h6>'+flightFrom+'</h6><h6>Return:'+flightTo+'</h6></div></div><div class="secondInsideElm"><h6>Price</h6><h5> 70 e</h5></div></div><div class="line"></div>');
+            }else{
+                console.log("not checked");
+            }
+        }
+
+        $(document).on("click","#wizz",function(){
+            // console.log("wizzair");
+            $(this).addClass("activeElm");
+            $("#ry").removeClass("activeElm");
+            $("#sas").removeClass("activeElm");
+            $("#qat").removeClass("activeElm");
+            flightName = "wizz";
+        })
+        $(document).on("click","#ry",function(){
+            // console.log("ry");
+            $(this).addClass("activeElm");
+            $("#wizz").removeClass("activeElm");
+            $("#sas").removeClass("activeElm");
+            $("#qat").removeClass("activeElm");
+            flightName = "ry";
+        })
+        $(document).on("click","#sas",function(){
+            // console.log("sas");
+            $(this).addClass("activeElm");
+            $("#wizz").removeClass("activeElm");
+            $("#ry").removeClass("activeElm");
+            $("#qat").removeClass("activeElm");
+            flightName = "sas";
+        })
+        $(document).on("click","#qat",function(){
+            // console.log("qatar");
+            $(this).addClass("activeElm");
+            $("#wizz").removeClass("activeElm");
+            $("#ry").removeClass("activeElm");
+            $("#sas").removeClass("activeElm");
+            flightName = "qat";
+        })
+
+    </script>
+</html>
